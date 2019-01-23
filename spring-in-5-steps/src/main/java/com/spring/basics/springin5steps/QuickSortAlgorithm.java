@@ -1,5 +1,11 @@
 package com.spring.basics.springin5steps;
 
-public class QuickSortAlgorithm {
+import org.springframework.stereotype.Component;
 
+@Component
+public class QuickSortAlgorithm implements SortAlgorithm {
+    public int[] sort (int[] numbers){
+        //Logic for Quick Sort
+        return numbers;
+    }
 }
