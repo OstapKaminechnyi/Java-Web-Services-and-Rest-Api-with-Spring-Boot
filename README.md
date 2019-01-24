@@ -2,7 +2,7 @@
 ### _Udemy Course_ 
 - [x] 01 Getting Started
 - [x] 02 Introduction To Web Services
-- [ ] 03 Introduction to Spring Framework in 10 Steps
+- [x] 03 Introduction to Spring Framework in 10 Steps
 - [ ] 04 Introduction to Spring Boot in 10 Steps
 - [ ] 05 SOAP Web Services with Spring and Spring Boot
 - [ ] 06 RESTful Web Services with Spring and Spring Boot
