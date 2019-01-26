@@ -9,7 +9,7 @@ import java.util.List;
 @RestController
 public class BooksController {
     @GetMapping("/books")
-    public List<Book> getAllDays()
+    public List<Book> getAllBooks()
     {
         return Arrays.asList(new Book(1l,"Masterig Spring","Ranga Karana"));
     }
