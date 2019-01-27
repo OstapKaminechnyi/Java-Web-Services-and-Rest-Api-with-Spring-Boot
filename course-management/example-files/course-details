@@ -5,8 +5,24 @@
     <element name="GetCourseDetailsRequest">
         <complexType>
             <sequence>
-                <element name="id" type="integer"></element>
+                <element name="id" type="integer"/>
             </sequence>
         </complexType>
     </element>
+    <element name="GetAllCourseDetailsResponse">
+        <complexType>
+            <sequence>
+                <element name="CourseDetails" type="tns:CourseDetails"/>
+            </sequence>
+        </complexType>
+    </element>
+    <complexType name="CourseDetails">
+        <sequence>
+            <element name="id" type="integer"/>
+            <element name="name" type="string"/>
+            <element name="description" type="string"/>
+
+        </sequence>
+
+    </complexType>
         </schema>
