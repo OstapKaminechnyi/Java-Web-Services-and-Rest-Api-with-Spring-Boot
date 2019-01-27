@@ -1,4 +1,4 @@
-package com.example.soap.webservices.coursemanagement;
+package com.example.soap.webservices.coursemanagement.soap;
 
 import com.in28minutes.courses.CourseDetails;
 import com.in28minutes.courses.GetCourseDetailsResponse;
