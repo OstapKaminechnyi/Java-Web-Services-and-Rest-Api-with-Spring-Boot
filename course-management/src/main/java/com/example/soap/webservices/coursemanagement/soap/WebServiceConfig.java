@@ -29,9 +29,9 @@ public class WebServiceConfig {
         return new ServletRegistrationBean<>(messageDispatcherServlet, "/ws/*");
     }
 
-        // /ws/courses.wsdl
+    // /ws/courses.wsdl
     // course-details.xsd
-    @Bean(name = "courses")
+    @Bean(name = "courses1")
     public DefaultWsdl11Definition defaultWsdl11Definition(XsdSchema coursesSchema) {
         DefaultWsdl11Definition definition = new DefaultWsdl11Definition();
         definition.setPortTypeName("CoursePort");
