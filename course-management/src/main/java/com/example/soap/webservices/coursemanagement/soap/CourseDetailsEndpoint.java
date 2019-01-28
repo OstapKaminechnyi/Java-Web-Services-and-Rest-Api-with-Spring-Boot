@@ -24,8 +24,11 @@ public class CourseDetailsEndpoint {
         GetCourseDetailsResponse response = new GetCourseDetailsResponse();
 
         CourseDetails courseDetails = new CourseDetails();
+
         courseDetails.setId(request.getId());
+
         courseDetails.setName("Microservices Course");
+
         courseDetails.setDescription("That would be a wonderful course!");
 
         response.setCourseDetails(courseDetails);
