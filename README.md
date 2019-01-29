@@ -4,7 +4,7 @@
 - [x] 02 Introduction To Web Services
 - [x] 03 Introduction to Spring Framework in 10 Steps
 - [x] 04 Introduction to Spring Boot in 10 Steps
-- [ ] 05 SOAP Web Services with Spring and Spring Boot
+- [x] 05 SOAP Web Services with Spring and Spring Boot
 - [ ] 06 RESTful Web Services with Spring and Spring Boot
 - [ ] 07 Introduction to JPA in 10 Steps
 - [ ] 08 Connecting RESTful Web Service to JPA
