@@ -22,16 +22,16 @@ public class WebServiceConfig {
     // url -> /ws/*
 
     @Bean
-    public ServletRegistrationBean<MessageDispatcherServlet> messageDispatcherServlet(ApplicationContext context) {
+    public ServletRegistrationBean messageDispatcherServlet(ApplicationContext context) {
         MessageDispatcherServlet messageDispatcherServlet = new MessageDispatcherServlet();
         messageDispatcherServlet.setApplicationContext(context);
         messageDispatcherServlet.setTransformWsdlLocations(true);
-        return new ServletRegistrationBean<>(messageDispatcherServlet, "/ws/*");
+        return new ServletRegistrationBean(messageDispatcherServlet, "/ws/*");
     }
 
     // /ws/courses.wsdl
     // course-details.xsd
-    @Bean(name = "courses1")
+    @Bean(name = "courses")
     public DefaultWsdl11Definition defaultWsdl11Definition(XsdSchema coursesSchema) {
         DefaultWsdl11Definition definition = new DefaultWsdl11Definition();
         definition.setPortTypeName("CoursePort");

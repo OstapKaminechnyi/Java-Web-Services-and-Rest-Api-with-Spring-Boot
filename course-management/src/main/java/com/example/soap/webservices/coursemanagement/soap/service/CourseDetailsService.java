@@ -1,15 +1,20 @@
 package com.example.soap.webservices.coursemanagement.soap.service;
 
 
-import com.example.soap.webservices.coursemanagement.soap.bean.Course;
-import org.springframework.stereotype.Component;
-
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+import org.springframework.stereotype.Component;
+
+import com.example.soap.webservices.coursemanagement.soap.bean.Course;
+
 @Component
 public class CourseDetailsService {
+
+    public enum Status {
+        SUCCESS, FAILURE;
+    }
 
     private static List<Course> courses = new ArrayList<>();
 
@@ -41,16 +46,16 @@ public class CourseDetailsService {
         return courses;
     }
 
-    public int deleteById(int id) {
+    public Status deleteById(int id) {
         Iterator<Course> iterator = courses.iterator();
         while (iterator.hasNext()) {
             Course course = iterator.next();
             if (course.getId() == id) {
                 iterator.remove();
-                return 1;
+                return Status.SUCCESS;
             }
         }
-        return 0;
+        return Status.FAILURE;
     }
 
     // updating course & new course

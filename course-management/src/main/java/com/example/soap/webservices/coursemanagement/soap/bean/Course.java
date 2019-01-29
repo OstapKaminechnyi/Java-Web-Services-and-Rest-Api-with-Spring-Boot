@@ -5,16 +5,9 @@ public class Course {
     private String name;
     private String description;
 
-    @Override
-    public String toString() {
-        return "Course{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", description='" + description + '\'' +
-                '}';
-    }
 
     public Course(int id, String name, String description) {
+        super();
         this.id = id;
         this.name = name;
         this.description = description;
@@ -43,4 +36,10 @@ public class Course {
     public void setDescription(String description) {
         this.description = description;
     }
+
+    @Override
+    public String toString() {
+        return String.format("Course [id=%s, name=%s, description=%s]", id, name, description);
+    }
+
 }
